@@ -1,0 +1,35 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "io.doublevpartners.users.user_management_app"
+
+    compileSdk = flutter.compileSdkVersion
+
+    defaultConfig {
+        applicationId "io.doublevpartners.users.user_management_app"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // 👉 AQUÍ, dentro de android { }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}

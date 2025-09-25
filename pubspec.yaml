@@ -1,0 +1,39 @@
+name: user_management_app
+description: Aplicación de gestión de usuarios con direcciones múltiples
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  get: ^4.6.6
+  mocktail: ^1.0.3
+
+  # State Management
+  provider: ^6.0.5
+
+  # UI Components
+  cupertino_icons: ^1.0.2
+  intl: ^0.18.1
+
+  # Form validation
+  form_field_validator: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
